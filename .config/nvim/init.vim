@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 Plug 'ap/vim-buftabline'
+Plug 'chrisbra/csv.vim'
 
 " Initialize plugin system
 call plug#end()
