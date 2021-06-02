@@ -1,0 +1,26 @@
+{
+  "suggest.noselect": false,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "typescript.tsx",
+    "graphql",
+    "python",
+    "cpp",
+    "c",
+    "yaml",
+    "markdown",
+    "html",
+    "css",
+    "R",
+    "go",
+    "rust",
+    "java"
+  ],
+  "clangd.path": "/home/dilawar/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
+}
