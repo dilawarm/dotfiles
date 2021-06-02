@@ -1,6 +1,6 @@
 # dotfiles
 
-Some dotfiles for configuring _i3_ and _neovim_ :computer:
+Some dotfiles for configuring my :computer:
 
 ## i3
 
