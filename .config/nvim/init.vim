@@ -17,7 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 Plug 'ap/vim-buftabline'
 Plug 'chrisbra/csv.vim'
-Plug 'djoshea/vim-autoread'
+Plug 'chrisbra/vim-autoread'
 
 " Initialize plugin system
 call plug#end()
