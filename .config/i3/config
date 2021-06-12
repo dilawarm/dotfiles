@@ -157,7 +157,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym $mod+Shift+f exec firefox
-bindsym $mod+Return exec alacritty 
+bindsym $mod+Return exec gnome-terminal 
 bindsym $mod+Shift+q kill
 bindsym --release Print exec shutter -s 
 exec --no-startup-id nm-applet
