@@ -38,7 +38,7 @@ bindsym $mod+f fullscreen
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-
+bindsym $mod+p move workspace to output right
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
@@ -165,6 +165,5 @@ bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opaci
 
 # startup
 exec_always feh --bg-scale /home/dilawar/Pictures/wallpaper.jpg
-exec_always xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output
-
+exec_always xrandr --output eDP1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 3840x120 --rotate left --output DP2 --off --output VIRTUAL1 --off
 exec --no-startup-id compton -f
