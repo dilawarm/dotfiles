@@ -17,7 +17,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # lock
-bindsym $mod+Shift+x exec i3lock --color 475263
+bindsym $mod+Shift+x exec i3lock --color 475263 # sudo apt install i3lock
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -146,24 +146,27 @@ bindsym $mod+Shift+s sticky toggle
 assign [class="Spotify"] $workspace10
 
 # key-bindings
+# sudo apt install pulseaudio
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# sudo apt install playerctl
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+# sudo apt install xbacklight
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Return exec gnome-terminal 
 bindsym $mod+Shift+q kill
-bindsym --release Print exec shutter -s 
-exec --no-startup-id nm-applet
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Fira Mono Regular Nerd Font Complete Mono 18"
+bindsym --release Print exec shutter -s # sudo add-apt-repository -y ppa:linuxuprising/shutter && sudo apt install shutter 
+exec --no-startup-id nm-applet # sudo apt install network-manager network-manager-gnome && sudo service network-manager start
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Fira Mono Regular Nerd Font Complete Mono 18" # sudo apt install rofi
 
 # startup
-exec_always feh --bg-scale /home/dilawar/Pictures/wallpaper.jpg
+exec_always feh --bg-scale /home/dilawar/Pictures/wallpaper.jpg # sudo apt install feh
 exec_always xrandr --output eDP1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 3840x120 --rotate left --output DP2 --off --output VIRTUAL1 --off
-exec --no-startup-id compton -f
+exec --no-startup-id compton -f # sudo apt install compton
